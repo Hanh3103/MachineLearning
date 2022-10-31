@@ -1,0 +1,5 @@
+Aufgabe3 : Unterschiede bei der Ausführung des Notbooks
+- Bei dem Environment 'pyyaml1' wird eine Warning geworfen. Es wird hingewiesen, dass ein Parameter beim Aufruf von yaml.load() fehlt. Es liegt daran, dass Version von Package pyyaml gleich 5.3.1 ist. 
+
+- Bei dem Environment 'pyyaml2' wird keine Warning geworfen. Als die beiden Zellen werden erfolgreich terminiert. Es liegt daran, dass Version von Package pyyaml gleich 3.13 ist. 
+
