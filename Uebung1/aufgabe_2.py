@@ -1,5 +1,7 @@
 
 from copy import deepcopy
+from itertools import tee
+from pyparsing import col
 
 
 def transp(matrix):
@@ -52,7 +54,30 @@ B = [[1,2,8],[3,5,7],[5,2,7]]
 print("The determinant of B --> ",determinate(B))
 
 def multiplikation(matrix, other):
-    pass
+    rows = len(matrix)
+    colums = len(matrix[0])
+
+    other_rows = len(other)
+    other_colums = len(other[0])
+    result = []
+
+    if colums == other_rows :
+        for  i in range(rows):
+            row = []
+            for j in range(other_colums):
+                temp = 0
+                for k in range(colums):
+                    temp += matrix[i][k]*other[k][j]
+                row.append(temp)
+            result.append(row)
+        return result
+    else:
+        print("cannot have the multiplication")
+
+B = [[1,2,8],[3,5,7],[5,2,7]]
+x = [[1,2,3],[4,5,6],[7,8,9]]
+print("The multiplication of matrics is ", multiplikation(B, x))
+
 
 
 
