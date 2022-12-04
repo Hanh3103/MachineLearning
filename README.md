@@ -1,2 +1,2 @@
 # MachineLearning - WS2022
-- a approach to maschine learning theories
+- an approach to machine learning theories
